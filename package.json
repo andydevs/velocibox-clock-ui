@@ -1,13 +1,13 @@
 {
-  "name": "project-name",
-  "version": "0.0.0",
-  "description": "Project description",
+  "name": "velocibox-clock-ui",
+  "version": "1.0.0",
+  "description": "A fancy looking clock display.",
   "main": "webpack.config.js",
   "scripts": {
     "webpack": "./node_modules/.bin/webpack --progress",
     "devserver": "./node_modules/.bin/webpack-dev-server --progress --watch"
   },
-  "keywords": [],
+  "keywords": ["clock", "ui-projects"],
   "author": "Anshul Kharbanda",
   "devDependencies": {
     "babel-core": "^6.26.0",
