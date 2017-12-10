@@ -1,10 +1,10 @@
 /**
- * Website
+ * Velocibox Clock UI
  *
  * Site description
  *
  * Author:  Anshul Kharbanda
- * Created: -- -- --
+ * Created: 11 - 28 - 2017
  */
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
