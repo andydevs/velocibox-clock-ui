@@ -18,8 +18,8 @@ const ENV = process.env.NODE_ENV || 'development'
 module.exports = {
     entry: './app/main.js',
     output: {
-        path: path.join(__dirname, 'build'),
         filename: 'bundle.js',
+        path: path.join(__dirname, 'build'),
         publicPath: (ENV === 'production' ? `/${project.name}/` : '/')
     },
     module: {
