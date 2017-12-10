@@ -19,7 +19,7 @@ module.exports = {
     output: {
         path: path.join(__dirname, 'build'),
         filename: 'bundle.js',
-        publicPath: '/'
+        publicPath: (ENV === 'production' ? '/velocibox-clock-ui/' : '/')
     },
     module: {
         loaders: [
@@ -33,8 +33,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: 'body',
             filename: 'index.html',
-            template: 'app/resources/html/' + ENV + '.index.html',
-            chunks: []
+            template: 'app/resources/html/index.html',
         })
     ]
 }
