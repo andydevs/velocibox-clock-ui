@@ -6,13 +6,13 @@
  * Author:  Anshul Kharbanda
  * Created: 11 - 28 - 2017
  */
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
-const path = require('path');
-const project = require('./package.json');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
+const path = require('path')
+const project = require('./package.json')
 
 // Environment
-const ENV = process.env.NODE_ENV || 'development';
+const ENV = process.env.NODE_ENV || 'development'
 
 // Webpack module
 module.exports = {
