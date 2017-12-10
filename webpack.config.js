@@ -10,6 +10,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
 
+// Environment
+var ENV = process.env.NODE_ENV || 'development';
+
 // Webpack module
 module.exports = {
     entry: './app/main.js',
@@ -20,37 +23,18 @@ module.exports = {
     },
     module: {
         loaders: [
-            {
-                test: /\.jsx?$/,
-                exclude: /node_modules/,
-                loader: 'babel-loader',
-                options: {
-                    presets: ['env']
-                }
-            },
-            {
-                test: /\.scss$/,
-                exclude: /node_modules/,
-                loaders: ['style-loader', 'css-loader', 'sass-loader']
-            },
-            {
-                test: /\.(svg|jpg|jpeg|png)$/,
-                exclude: /node_modules/,
-                loader: 'url-loader'
-            },
-            {
-                test: /\.html$/,
-                exclude: /node_modules/,
-                loader: 'html-loader'
-            }
+            { test: /\.jsx?$/, exclude: /node_modules/, use: 'babel-loader' },
+            { test: /\.scss$/, use: ['style-loader','css-loader','sass-loader'] },
+            { test: /\.(svg|jpg|jpeg|png)$/, loader: 'url-loader' },
+            { test: /\.html$/, loader: 'html-loader' }
         ]
-    },
-    devServer: {
-        historyApiFallback: true
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'app/resources/html/index.html'
+            inject: 'body',
+            filename: 'index.html',
+            template: 'app/resources/html/' + ENV + '.index.html',
+            chunks: []
         })
     ]
 }
