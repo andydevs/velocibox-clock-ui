@@ -9,6 +9,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
+const project = require('./package.json');
 
 // Environment
 var ENV = process.env.NODE_ENV || 'development';
@@ -19,7 +20,7 @@ module.exports = {
     output: {
         path: path.join(__dirname, 'build'),
         filename: 'bundle.js',
-        publicPath: (ENV === 'production' ? '/velocibox-clock-ui/' : '/')
+        publicPath: (ENV === 'production' ? `/${project.name}/` : '/')
     },
     module: {
         loaders: [
@@ -27,7 +28,6 @@ module.exports = {
             { test: /\.scss$/, use: ['style-loader','css-loader','sass-loader'] },
             { test: /\.(svg|jpg|jpeg|png)$/, loader: 'url-loader' },
             { test: /\.html$/, loader: 'html-loader' }
-        ]
     },
     plugins: [
         new HtmlWebpackPlugin({
