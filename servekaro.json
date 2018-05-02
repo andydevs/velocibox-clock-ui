@@ -1,0 +1,5 @@
+{
+    "serving": "build",
+    "notFound": "index.html",
+    "root": "index.html"
+}

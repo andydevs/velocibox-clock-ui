@@ -4,10 +4,14 @@
   "description": "A fancy looking clock display.",
   "main": "webpack.config.js",
   "scripts": {
+    "start": "./node_modules/.bin/servekaro",
     "webpack": "./node_modules/.bin/webpack --progress",
     "devserver": "./node_modules/.bin/webpack-dev-server --progress --watch"
   },
-  "keywords": ["clock", "ui-projects"],
+  "keywords": [
+    "clock",
+    "ui-projects"
+  ],
   "author": "Anshul Kharbanda",
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -25,6 +29,7 @@
     "webpack-dev-server": "^2.9.4"
   },
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "servekaro": "0.0.1"
   }
 }
