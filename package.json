@@ -6,7 +6,8 @@
   "scripts": {
     "start": "./node_modules/.bin/servekaro",
     "webpack": "./node_modules/.bin/webpack --progress",
-    "devserver": "./node_modules/.bin/webpack-dev-server --progress --watch"
+    "devserver": "./node_modules/.bin/webpack-dev-server --progress --watch",
+    "postinstall": "npm run webpack"
   },
   "keywords": [
     "clock",
