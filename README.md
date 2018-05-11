@@ -1,5 +1,7 @@
 # Velocibox Clock UI
 
+[![Build Status](https://travis-ci.com/andydevs/velocibox-clock-ui.svg?branch=master)](https://travis-ci.com/andydevs/velocibox-clock-ui)
+
 A fancy looking clock display. [View it here!](https://andydevs.github.io/velocibox-clock-ui)
 
 Inspired by the cool-looking numbers in [this game](https://youtu.be/TbqZv9WGQR4)
