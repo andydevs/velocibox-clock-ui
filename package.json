@@ -1,13 +1,11 @@
 {
   "name": "velocibox-clock-ui",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A fancy looking clock display.",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "./node_modules/.bin/servekaro",
     "webpack": "./node_modules/.bin/webpack --progress",
-    "devserver": "./node_modules/.bin/webpack-dev-server --progress --watch",
-    "postinstall": "npm run webpack"
+    "devserver": "./node_modules/.bin/webpack-dev-server --progress --watch"
   },
   "keywords": [
     "clock",
