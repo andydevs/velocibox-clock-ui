@@ -12,7 +12,7 @@ const path = require('path')
 const project = require('./package.json')
 
 // Environment
-const ENV = process.env.NODE_ENV || 'development'
+const ENV = process.env.BUILD_ENV || 'development'
 
 // Webpack module
 module.exports = {
