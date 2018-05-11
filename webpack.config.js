@@ -20,7 +20,7 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.join(__dirname, 'build'),
-        publicPath: ( ENV === 'production' ? '/velocibox-clock-ui/' : '/' )
+        publicPath: ( ENV === 'production' ? `/${project.name}/` : '/' )
     },
     module: {
         loaders: [
