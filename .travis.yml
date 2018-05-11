@@ -4,8 +4,7 @@ script: npm run webpack
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token:
-    secure: UthtPv+oBY5N4Dyd+C+Xqr8Vyix/L2Jn8RYDciLmgPR1w9krxLFhEHAGuFRLQ/rQtV/QYTd0Kr9Skq90rQOq1nwFEdKMxApOtWbbunndGtlKNbD8OSrA1VpNTCCPzqNLv/x+mg2l6LodlLjjh6JmejKaaAoCP6bTmMF6rUanmzAIrUQk/CE7vnjFNw+oFZwMkuYubmhSOXnAeHbsmW1x6NoWRIqzqsAjiaA/NdkzULOR59U9hy6BLfD6j0YbD7uk6qionHfLJKji6ALs5S1NPTaqaTH7xGt8Q1gy/NCRSOJzuMHzgn4w3yAjNRbAIm/bA9HGR/zLkq/qMw9Tyi+EekTrfqEQgxX0i0HFkFh6iIRyFrOeW+sip5rDnhY84SBgZZox5GlWZ4cTrUT+ruM3tww3CLw3mdt68dCIc2FwY+0ZLHueRBwnYv7ZlAbUuOURWuCryoYo70eYm8d/7rHpbzD+fTsBGCzJhQSCxfZiG6RjUJkfVjHsDGgnVVzSYTLVBQnv+xOmRAg5Xv9xau8E9DkJaCUOKX3OUwv7zQIYLMh7o2ltf1GMjEg+2ONF/Y1DowmerqV4K/RRZz1g92S5+LiXKKHLnRrhqWMp3plFm/KKKfbbTXDoYxwSqRARjQHlxVXgnE0pLLSs0TeUKGrOZclgof5/8Ypcgjys9O50IHE=
+  github-token: $GITHUB_TOKEN
   keep-history: true
   local-dir: build
   target-branch: gh-pages
