@@ -32,7 +32,9 @@ const THEMES = [
     'black-red-theme',
     'tricolor-theme',
     'drexel-theme',
-    'black-white-theme'
+    'black-white-theme',
+    'star-candy-theme',
+    'star-pineapple-theme'
 ]
 
 /**
