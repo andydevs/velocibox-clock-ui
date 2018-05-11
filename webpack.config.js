@@ -34,7 +34,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: 'body',
             filename: 'index.html',
-            template: 'app/resources/html/index.html',
+            template: 'app/resources/html/index.html'
         })
     ]
 }
