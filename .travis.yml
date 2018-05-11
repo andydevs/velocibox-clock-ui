@@ -1,0 +1,13 @@
+language: node_js
+node_js: lts/*
+script: npm run webpack
+deploy:
+    provider: pages
+    skip-cleanup: true
+    github-token:
+        secure: MUS593sZAox9s4TSFU6BqA3m88MlVMBB+LhxxtZglcUKjIKao12yDN5xR2Y5jDuqM3/wyaQUAG7AgRqXJETtxmRGttfbkfZKORVCilUc/jNawyRhCtVeZTCbxXX+c/p7atnvLD/ghTpRv+ZY0ngaYmpgWnonYq79nXWuCHzs3EOX9q5RTss6l/5iXc5xF8ldWA5PqzMHYo+YqpMlAShXUk8NKOuazWBxR+voCsHVoZRsUkdTZbYTH68gKl1XIJ6sWzJArBXh5KKBs23NvymTnVxeRjRVHVt1uI1Zh/69qMJh4F2qpbExqRPTGy5vnl/v/O/fVIK/9jdC9+Uw4Rd97AiORRta5XUJeydQV/lWf9UPfEPe/Ull12qMynYKeQNj27LPpbl4FVYIMyrp4COeGPC0kATQwMn6prZSX1gWmaN6dVoH6FRx7i3eu3Ecnv8Fe33sVPuReT2gn3tMLqhHNSDz6uaBPDXT4RHyfzdYZe+y4U+IGM6qwteztcutYojbqGl2NByJO5+fcxFVNvkAs0kcq5adQoSl565hMK2JOnit4MR1LPl8qPvL23wQFAlVsmtlCHTLt5QcDOwszTZmY/vDMfoCeLf0Xr8xbiPsg+LXUR2yA5+jVsAtgkpzQDpHys23vd4vAbvQNcNddhmHEZiUCUDH8uHJS9AoWwmFzlc=
+    keep-history: true
+    local-dir: build
+    target-branch: gh-pages
+    on:
+        branch: master
